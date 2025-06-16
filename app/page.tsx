@@ -8,7 +8,7 @@ import { useToast } from "@/hooks/use-toast"
 
 export default function Home() {
   const { toast } = useToast()
-  const [contractAddress] = useState("GcsiAmeSVyeaTYMYFwz5t5X3DpgWhV8P7BmFEv4vpump")
+  const [contractAddress] = useState("")
 
   // Generate an array of 40 items for the background tiles
   const backgroundTiles = Array.from({ length: 40 }, (_, i) => ({
@@ -68,26 +68,13 @@ export default function Home() {
         <div className="z-10 flex w-full max-w-md flex-col items-center justify-center space-y-6 px-4 text-center">
           <h1 className="text-6xl font-extrabold tracking-tighter md:text-7xl lg:text-8xl">
             <span className="bg-gradient-to-b from-pink-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-              $GIF
+              $BUTT
             </span>
           </h1>
 
           <p className="text-lg text-gray-200 md:text-xl">
             A timeless form of media, more than just a picture but less than a video
           </p>
-
-          <div className="flex w-full items-center space-x-2">
-            <Input value={contractAddress} readOnly className="bg-gray-800/50 border-gray-700 text-gray-200" />
-            <Button
-              onClick={copyToClipboard}
-              variant="outline"
-              size="icon"
-              className="border-gray-700 bg-gray-800/50 hover:bg-gray-700"
-            >
-              <Copy className="h-4 w-4" />
-              <span className="sr-only">Copy contract address</span>
-            </Button>
-          </div>
         </div>
       </div>
     </main>
