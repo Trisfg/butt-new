@@ -73,21 +73,10 @@ export default function Home() {
           </h1>
 
           <p className="text-lg text-gray-200 md:text-xl">
-            A timeless form of media, more than just a picture but less than a video
+            
           </p>
 
-          <div className="flex w-full items-center space-x-2">
-            <Input value={contractAddress} readOnly className="bg-gray-800/50 border-gray-700 text-gray-200" />
-            <Button
-              onClick={copyToClipboard}
-              variant="outline"
-              size="icon"
-              className="border-gray-700 bg-gray-800/50 hover:bg-gray-700"
-            >
-              <Copy className="h-4 w-4" />
-              <span className="sr-only">Copy contract address</span>
-            </Button>
-          </div>
+          
         </div>
       </div>
     </main>
