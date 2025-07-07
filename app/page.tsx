@@ -8,7 +8,7 @@ import { useToast } from "@/hooks/use-toast"
 
 export default function Home() {
   const { toast } = useToast()
-  const [contractAddress] = useState("Soon")
+  const [contractAddress] = useState("DDQ6hzk5JHGVGK5EexeR1W7R7KPdsqKQG61fH5CqEE14")
 
   // Generate an array of 40 items for the background tiles
   const backgroundTiles = Array.from({ length: 40 }, (_, i) => ({
